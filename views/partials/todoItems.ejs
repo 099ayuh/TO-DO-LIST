@@ -3,18 +3,18 @@
         <div class="d-flex form-control w-100 h-auto align-items-center  ">
             <form action="/edit/<%= details._id %>" method="POST" class="d-flex justify-content-between w-100">
                 <div class="d-flex align-content-center">
-                    <input type="text" value="<%= details.message %>" name="message" class="border-0 outline">
+                    <input type="text" value="<%= details.message %>" name="message" class="border-0 outline divinp">
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-primary">&nbsp;<span class="fas fa-save"></span></button>
+                    <button type="submit" class="btn btn-primary">&nbsp;<span class="fas fa-save m-2"></span></button>
                     <a href="/" class="btn btn-danger"><span class="fas fa-times"></span></a>
                 </div>
             </form>
         </div>
         <% } else { %>
-            <li class="d-flex form-control w-100 h-auto align-items-center justify-content-between my-2"
+            <li class="form-control"
                 style="background-color: #c5e1e5; border: 1px solid #2362cc;">
-                <div class="">
+                <div class="msg">
                     <%= details.message %>
                 </div>
                 <div class="d-flex flex-row">

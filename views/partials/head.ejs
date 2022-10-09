@@ -1,0 +1,70 @@
+<title>Todo App</title>
+<link rel="stylesheet" href="/static/stylesheets/style.css" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Candal|Chewy&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins&display=swap');
+
+    * {
+        font-family: "Poppins", sans-serif;
+    }
+
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #2362cc;
+    }
+
+    #message {
+        font-size: 18px;
+    }
+
+    .top {
+        max-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        max-width: 50vw;
+        height: fit-content;
+        background-color: aliceblue;
+        border-radius: 10px;
+        gap: 15px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .top::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .top::-webkit-scrollbar-track {
+        background: #e6e6e6;
+        border-radius: 25px;
+    }
+
+    .top::-webkit-scrollbar-thumb {
+        background: #f12711;
+        border-radius: 25px;
+    }
+
+
+
+
+    .form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        max-width: 50vw;
+        margin-bottom: 5vh;
+    }
+
+    .outline {
+        outline: none;
+    }
+</style>

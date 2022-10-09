@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <%- include('../partials/head'); %>
+</head>
+
+<body class="container-fluid">
+    <div class="w-50 top">
+        <h2 class="text-center">To-Do List</h2>
+        <div class="top2">
+            <form action="/" method="POST" class="form">
+                <input type="text" class="form-control p-4" name="message" id="message"
+                    placeholder="Add a New Task + Enter" autocomplete="off">
+                <button class="d-flex align-items-center btn btn-primary px-4 text-center" type="submit">Add</button>
+                <!-- <span
+                    class="fas fa-plus"></span>&nbsp; -->
+            </form>
+            <div>
+                <%- include('../partials/todoItems'); %>
+            </div>
+        </div>
+        </div>
+        <footer>
+            <%- include('../partials/footer'); %>
+        </footer>
+</body>
